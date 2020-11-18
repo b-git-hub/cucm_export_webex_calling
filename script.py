@@ -17,10 +17,10 @@ import csv
  
 disable_warnings(InsecureRequestWarning)
  
-username = 'cucmadmin'
-password = 'CUCM_ADMIN'
+username = input('Enter CUCM username: ')
+password = input('Enter valid password')
 # If you're not disabling SSL verification, host should be the FQDN of the server rather than IP
-host = '192.168.68.204'
+host = input('Enter web URL for server: ')
  
 wsdl = '/home/brian/Documents/GIT/cucm_export_webex_calling/axlsqltoolkit/schema/current/AXLAPI.wsdl'
 location = 'https://{host}:8443/axl/'.format(host=host)
